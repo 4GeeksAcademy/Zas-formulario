@@ -19,7 +19,7 @@
 
 <body>
 
-    <div class="card m-auto mt-5" style="width:70%;" >
+    <div class="card m-auto mt-5" style="width:70%;">
         <div class="card-header d-flex flex-start">
             <h3>Ejemplo de formulario de pago</h3>
         </div>
@@ -27,138 +27,138 @@
 
             <div class="alert alert-danger" role="alert">
                 Faltan algunos campos por completar
-              </div>
+            </div>
             <form method="POST">
 
 
                 <!-- primera fila -->
 
-                
+
 
                 <div class="row mt-4">
-                    <div class="col-md-4 col-12">
+                    <div class="col-md-6 col-12">
                         <label for="cardnumber"> Tarjeta #</label>
                         <input class="form-control" type="number" id="cardnumber">
                     </div>
-                    <div class="col-md-4 col-12">
+                    <div class="col-md-3 col-12">
                         <label for="cvcnumber"> CVC #</label>
                         <input class="form-control" type="number" id="cvcnumber">
                     </div>
-                    <div class="col-md-4 col-12">
-                        
+                    <div class="col-md-3 col-12">
+
                         <label class="ps-4" for="amount"> Cantidad #</label>
                         <div class="d-flex">
                             <i class="fa-solid fa-euro-sign m-2"></i>
-                        <input class="form-control" type="number" id="amount">
-                    </div>
+                            <input class="form-control" type="number" id="amount">
+                        </div>
                     </div>
                 </div>
 
-                    <!-- segunda fila -->
+                <!-- segunda fila -->
 
-                    <div class="row mt-4">
-                        <div class="col-md-6 col-12">
-                            <label for="firstName">Nombre</label>
-                            <input class="form-control" type="text" id="firstName">
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <label for="lastName">Apellidos</label>
-                            <input class="form-control" type="text" id="lastName">
-                        </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 col-12">
+                        <label for="firstName">Nombre</label>
+                        <input class="form-control" type="text" id="firstName">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <label for="lastName">Apellidos</label>
+                        <input class="form-control" type="text" id="lastName">
+                    </div>
+
+                </div>
+
+                <!-- tercera fila -->
+
+                <div class="row mt-4">
+
+                    <div class="col-12 col-md-6">
+                        <label for="ciudad">Ciudad</label>
+                        <input class="form-control" type="text" id="ciudad">
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <label for="state">Provincia</label>
+                        <select class="form-control" name="state" id="state">
+
+                            <option value="Madrid">Madrid</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Valencia" selected>Valencia</option>
+                            <option value="Valladolid">Valladolid</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="islasBaleares">Islas Baleares</option>
+                            <option value="aCorunya">A Coruña</option>
+                            <option value="Bilbao">Bilbao</option>
+
+                        </select>
+
+
 
                     </div>
 
-                        <!-- tercera fila -->
 
-                        <div class="row mt-4">
-
-                            <div class="col-12 col-md-6">
-                                <label for="ciudad">Ciudad</label>
-                                <input class="form-control" type="text" id="ciudad">
-                            </div>
-
-                            <div class="col-6 col-md-3">
-                                <label for="state">Provincia</label>
-                                <select class="form-control" name="state" id="state">
-
-                                    <option value="Madrid">Madrid</option>
-                                    <option value="Barcelona">Barcelona</option>
-                                    <option value="Valencia" selected>Valencia</option>
-                                    <option value="Valladolid">Valladolid</option>
-                                    <option value="Sevilla">Sevilla</option>
-                                    <option value="islasBaleares">Islas Baleares</option>
-                                    <option value="aCorunya">A Coruña</option>
-                                    <option value="Bilbao">Bilbao</option>
-
-                                </select>
-                                    
+                    <div class="col-6 col-md-3">
+                        <label for="postalCode">Código postal</label>
+                        <input class="form-control" type="number" id="postalCode">
+                    </div>
 
 
-                            </div>
+                </div>
 
+                <!-- cuarta fila -->
 
-                            <div class="col-6 col-md-3">
-                                <label for="postalCode">Código postal</label>
-                                <input class="form-control" type="number" id="postalCode">
-                            </div>
-                            
-    
-                        </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6">
+                        <p for="tarjetas">Aceptamos</p>
 
-                        <!-- cuarta fila -->
-
-                        <div class="row mt-4">
-                            <div class="col-12 col-md-6">
-                                <p for="tarjetas">Aceptamos</p> 
-                                
-                                <label for="tarjetas">
-                                    <div class="btn-group" data-toggle="buttons">
-                                        <label class="btn btn-secondary">
-                                            <input autocomplete="off" checked id="blue" name="options" type="radio">
-                                            <i class="fab fa-cc-mastercard"></i>
-                                        </label>
-                                        <label class="btn btn-secondary">
-                                            <input autocomplete="off" id="red" name="options" type="radio">
-                                            <i class="fab fa-cc-visa"></i>
-                                        </label>
-                                        <label class="btn btn-secondary">
-                                            <input autocomplete="off" id="green" name="options" type="radio">
-                                            <i class="fab fa-cc-diners-club"></i>
-                                        </label>
-                                        <label class="btn btn-secondary">
-                                            <input autocomplete="off" id="yellow" name="options" type="radio">
-                                            <i class="fab fa-cc-amex"></i>
-                                        </label>
-                                    </div>
+                        <label for="tarjetas">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" checked id="blue" name="options" type="radio">
+                                    <i class="fab fa-cc-mastercard"></i>
                                 </label>
-
-                                
-                                
-
-
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="red" name="options" type="radio">
+                                    <i class="fab fa-cc-visa"></i>
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="green" name="options" type="radio">
+                                    <i class="fab fa-cc-diners-club"></i>
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input autocomplete="off" id="yellow" name="options" type="radio">
+                                    <i class="fab fa-cc-amex"></i>
+                                </label>
                             </div>
-                            <div class="col-12 col-md-6">
-                                <label for="floatingTextarea">Mensaje</label>
+                        </label>
 
-                                <div class="form-floating">
-                                    
-                                    <textarea class="form-control" id="floatingTextarea" maxLength="256"></textarea>
 
-                                    <p class="text-secondary">Añade cualquier comentario.</p>
-                                    
-                                  </div>
-                            </div>
+
+
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="floatingTextarea">Mensaje</label>
+
+                        <div class="form-floating">
+
+                            <textarea class="form-control" id="floatingTextarea" maxLength="256"></textarea>
+
+                            <p class="text-secondary">Añade cualquier comentario.</p>
+
                         </div>
+                    </div>
+                </div>
 
 
             </form>
 
-          
-            
+
+
         </div>
         <div class="card-footer text-body-secondary d-flex justify-content-end">
             <a href="#" class="btn btn-secondary mx-2">Cancelar</a>
-            <a href="#" class="btn btn-primary mx-2" >Enviar</a>
+            <a href="#" class="btn btn-primary mx-2">Enviar</a>
         </div>
     </div>
 
